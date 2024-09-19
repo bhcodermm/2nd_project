@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.44;
+    height: 70vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 80vw;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 116px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(78, 78, 78);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(155, 155, 155, 0.078);
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+
+
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+.main input {
+    padding: 7px 15px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+nav button,
+.btn-red,
+.btn-red-sm {
+    border: none;
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+.secimage {
+    position: relative;
+
+}
+
+.secimage img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimage video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+.first>div :first-child {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.first>div :nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.faqbox:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+footer .questions {
+ padding-bottom: 35px;
+ 
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: all 0.25s ease-in-out;
+    
+}
+.footer a:hover {
+    opacity: 0.7;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
